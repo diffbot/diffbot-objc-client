@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB9FB8061896401E002A1F94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FB8051896401E002A1F94 /* Foundation.framework */; };
+		EB9FB8081896401E002A1F94 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FB8071896401E002A1F94 /* CoreGraphics.framework */; };
+		EB9FB80A1896401E002A1F94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FB8091896401E002A1F94 /* UIKit.framework */; };
+		EB9FB8101896401E002A1F94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB9FB80E1896401E002A1F94 /* InfoPlist.strings */; };
+		EB9FB8121896401E002A1F94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB8111896401E002A1F94 /* main.m */; };
+		EB9FB8161896401E002A1F94 /* DiffbotAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB8151896401E002A1F94 /* DiffbotAppDelegate.m */; };
+		EB9FB8181896401E002A1F94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9FB8171896401E002A1F94 /* Images.xcassets */; };
+		EB9FB81F1896401E002A1F94 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FB81E1896401E002A1F94 /* XCTest.framework */; };
+		EB9FB8201896401E002A1F94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FB8051896401E002A1F94 /* Foundation.framework */; };
+		EB9FB8211896401E002A1F94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FB8091896401E002A1F94 /* UIKit.framework */; };
+		EB9FB8291896401E002A1F94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB9FB8271896401E002A1F94 /* InfoPlist.strings */; };
+		EB9FB82B1896401E002A1F94 /* DiffbotAPIClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB82A1896401E002A1F94 /* DiffbotAPIClientTests.m */; };
+		EB9FB85018964045002A1F94 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB83718964045002A1F94 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB9FB85118964045002A1F94 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB83A18964045002A1F94 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB9FB85218964045002A1F94 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB83C18964045002A1F94 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB9FB85318964045002A1F94 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB83E18964045002A1F94 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB9FB85418964045002A1F94 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB84018964045002A1F94 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB9FB85518964045002A1F94 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB84218964045002A1F94 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB9FB85618964045002A1F94 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB84618964045002A1F94 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB9FB85718964045002A1F94 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB84818964045002A1F94 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB9FB85818964045002A1F94 /* DiffbotAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB84B18964045002A1F94 /* DiffbotAPIClient.m */; };
+		EB9FB85918964045002A1F94 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB84D18964045002A1F94 /* NSDictionary+Merge.m */; };
+		EB9FB85A18964045002A1F94 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FB84F18964045002A1F94 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB9FB85C18964059002A1F94 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FB85B18964059002A1F94 /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB9FB8221896401E002A1F94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB9FB7FA1896401E002A1F94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB9FB8011896401E002A1F94;
+			remoteInfo = DiffbotAPIClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB9FB8021896401E002A1F94 /* DiffbotAPIClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffbotAPIClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9FB8051896401E002A1F94 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB9FB8071896401E002A1F94 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB9FB8091896401E002A1F94 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB9FB80D1896401E002A1F94 /* DiffbotAPIClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiffbotAPIClient-Info.plist"; sourceTree = "<group>"; };
+		EB9FB80F1896401E002A1F94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB9FB8111896401E002A1F94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB9FB8131896401E002A1F94 /* DiffbotAPIClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiffbotAPIClient-Prefix.pch"; sourceTree = "<group>"; };
+		EB9FB8141896401E002A1F94 /* DiffbotAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiffbotAppDelegate.h; sourceTree = "<group>"; };
+		EB9FB8151896401E002A1F94 /* DiffbotAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiffbotAppDelegate.m; sourceTree = "<group>"; };
+		EB9FB8171896401E002A1F94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EB9FB81D1896401E002A1F94 /* DiffbotAPIClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiffbotAPIClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9FB81E1896401E002A1F94 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EB9FB8261896401E002A1F94 /* DiffbotAPIClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiffbotAPIClientTests-Info.plist"; sourceTree = "<group>"; };
+		EB9FB8281896401E002A1F94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB9FB82A1896401E002A1F94 /* DiffbotAPIClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiffbotAPIClientTests.m; sourceTree = "<group>"; };
+		EB9FB83618964045002A1F94 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		EB9FB83718964045002A1F94 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		EB9FB83818964045002A1F94 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		EB9FB83918964045002A1F94 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		EB9FB83A18964045002A1F94 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		EB9FB83B18964045002A1F94 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		EB9FB83C18964045002A1F94 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		EB9FB83D18964045002A1F94 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		EB9FB83E18964045002A1F94 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		EB9FB83F18964045002A1F94 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		EB9FB84018964045002A1F94 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		EB9FB84118964045002A1F94 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		EB9FB84218964045002A1F94 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		EB9FB84318964045002A1F94 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		EB9FB84418964045002A1F94 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		EB9FB84518964045002A1F94 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		EB9FB84618964045002A1F94 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		EB9FB84718964045002A1F94 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		EB9FB84818964045002A1F94 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		EB9FB84918964045002A1F94 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		EB9FB84A18964045002A1F94 /* DiffbotAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffbotAPIClient.h; sourceTree = "<group>"; };
+		EB9FB84B18964045002A1F94 /* DiffbotAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiffbotAPIClient.m; sourceTree = "<group>"; };
+		EB9FB84C18964045002A1F94 /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Merge.h"; sourceTree = "<group>"; };
+		EB9FB84D18964045002A1F94 /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Merge.m"; sourceTree = "<group>"; };
+		EB9FB84E18964045002A1F94 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		EB9FB84F18964045002A1F94 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		EB9FB85B18964059002A1F94 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB9FB7FF1896401E002A1F94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9FB85C18964059002A1F94 /* libz.dylib in Frameworks */,
+				EB9FB8081896401E002A1F94 /* CoreGraphics.framework in Frameworks */,
+				EB9FB80A1896401E002A1F94 /* UIKit.framework in Frameworks */,
+				EB9FB8061896401E002A1F94 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9FB81A1896401E002A1F94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9FB81F1896401E002A1F94 /* XCTest.framework in Frameworks */,
+				EB9FB8211896401E002A1F94 /* UIKit.framework in Frameworks */,
+				EB9FB8201896401E002A1F94 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB9FB7F91896401E002A1F94 = {
+			isa = PBXGroup;
+			children = (
+				EB9FB80B1896401E002A1F94 /* DiffbotAPIClient */,
+				EB9FB8241896401E002A1F94 /* DiffbotAPIClientTests */,
+				EB9FB8041896401E002A1F94 /* Frameworks */,
+				EB9FB8031896401E002A1F94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB9FB8031896401E002A1F94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB9FB8021896401E002A1F94 /* DiffbotAPIClient.app */,
+				EB9FB81D1896401E002A1F94 /* DiffbotAPIClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB9FB8041896401E002A1F94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB9FB85B18964059002A1F94 /* libz.dylib */,
+				EB9FB8051896401E002A1F94 /* Foundation.framework */,
+				EB9FB8071896401E002A1F94 /* CoreGraphics.framework */,
+				EB9FB8091896401E002A1F94 /* UIKit.framework */,
+				EB9FB81E1896401E002A1F94 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB9FB80B1896401E002A1F94 /* DiffbotAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				EB9FB83418964045002A1F94 /* DiffbotAPIClient */,
+				EB9FB8141896401E002A1F94 /* DiffbotAppDelegate.h */,
+				EB9FB8151896401E002A1F94 /* DiffbotAppDelegate.m */,
+				EB9FB8171896401E002A1F94 /* Images.xcassets */,
+				EB9FB80C1896401E002A1F94 /* Supporting Files */,
+			);
+			path = DiffbotAPIClient;
+			sourceTree = "<group>";
+		};
+		EB9FB80C1896401E002A1F94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB9FB80D1896401E002A1F94 /* DiffbotAPIClient-Info.plist */,
+				EB9FB80E1896401E002A1F94 /* InfoPlist.strings */,
+				EB9FB8111896401E002A1F94 /* main.m */,
+				EB9FB8131896401E002A1F94 /* DiffbotAPIClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB9FB8241896401E002A1F94 /* DiffbotAPIClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB9FB82A1896401E002A1F94 /* DiffbotAPIClientTests.m */,
+				EB9FB8251896401E002A1F94 /* Supporting Files */,
+			);
+			path = DiffbotAPIClientTests;
+			sourceTree = "<group>";
+		};
+		EB9FB8251896401E002A1F94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB9FB8261896401E002A1F94 /* DiffbotAPIClientTests-Info.plist */,
+				EB9FB8271896401E002A1F94 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB9FB83418964045002A1F94 /* DiffbotAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				EB9FB83518964045002A1F94 /* ASIHTTPRequest */,
+				EB9FB84A18964045002A1F94 /* DiffbotAPIClient.h */,
+				EB9FB84B18964045002A1F94 /* DiffbotAPIClient.m */,
+				EB9FB84C18964045002A1F94 /* NSDictionary+Merge.h */,
+				EB9FB84D18964045002A1F94 /* NSDictionary+Merge.m */,
+				EB9FB84E18964045002A1F94 /* Reachability.h */,
+				EB9FB84F18964045002A1F94 /* Reachability.m */,
+			);
+			path = DiffbotAPIClient;
+			sourceTree = "<group>";
+		};
+		EB9FB83518964045002A1F94 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				EB9FB83618964045002A1F94 /* ASIAuthenticationDialog.h */,
+				EB9FB83718964045002A1F94 /* ASIAuthenticationDialog.m */,
+				EB9FB83818964045002A1F94 /* ASICacheDelegate.h */,
+				EB9FB83918964045002A1F94 /* ASIDataCompressor.h */,
+				EB9FB83A18964045002A1F94 /* ASIDataCompressor.m */,
+				EB9FB83B18964045002A1F94 /* ASIDataDecompressor.h */,
+				EB9FB83C18964045002A1F94 /* ASIDataDecompressor.m */,
+				EB9FB83D18964045002A1F94 /* ASIDownloadCache.h */,
+				EB9FB83E18964045002A1F94 /* ASIDownloadCache.m */,
+				EB9FB83F18964045002A1F94 /* ASIFormDataRequest.h */,
+				EB9FB84018964045002A1F94 /* ASIFormDataRequest.m */,
+				EB9FB84118964045002A1F94 /* ASIHTTPRequest.h */,
+				EB9FB84218964045002A1F94 /* ASIHTTPRequest.m */,
+				EB9FB84318964045002A1F94 /* ASIHTTPRequestConfig.h */,
+				EB9FB84418964045002A1F94 /* ASIHTTPRequestDelegate.h */,
+				EB9FB84518964045002A1F94 /* ASIInputStream.h */,
+				EB9FB84618964045002A1F94 /* ASIInputStream.m */,
+				EB9FB84718964045002A1F94 /* ASINetworkQueue.h */,
+				EB9FB84818964045002A1F94 /* ASINetworkQueue.m */,
+				EB9FB84918964045002A1F94 /* ASIProgressDelegate.h */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB9FB8011896401E002A1F94 /* DiffbotAPIClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB9FB82E1896401E002A1F94 /* Build configuration list for PBXNativeTarget "DiffbotAPIClient" */;
+			buildPhases = (
+				EB9FB7FE1896401E002A1F94 /* Sources */,
+				EB9FB7FF1896401E002A1F94 /* Frameworks */,
+				EB9FB8001896401E002A1F94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiffbotAPIClient;
+			productName = DiffbotAPIClient;
+			productReference = EB9FB8021896401E002A1F94 /* DiffbotAPIClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB9FB81C1896401E002A1F94 /* DiffbotAPIClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB9FB8311896401E002A1F94 /* Build configuration list for PBXNativeTarget "DiffbotAPIClientTests" */;
+			buildPhases = (
+				EB9FB8191896401E002A1F94 /* Sources */,
+				EB9FB81A1896401E002A1F94 /* Frameworks */,
+				EB9FB81B1896401E002A1F94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB9FB8231896401E002A1F94 /* PBXTargetDependency */,
+			);
+			name = DiffbotAPIClientTests;
+			productName = DiffbotAPIClientTests;
+			productReference = EB9FB81D1896401E002A1F94 /* DiffbotAPIClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB9FB7FA1896401E002A1F94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Diffbot;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Dan;
+				TargetAttributes = {
+					EB9FB81C1896401E002A1F94 = {
+						TestTargetID = EB9FB8011896401E002A1F94;
+					};
+				};
+			};
+			buildConfigurationList = EB9FB7FD1896401E002A1F94 /* Build configuration list for PBXProject "DiffbotAPIClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB9FB7F91896401E002A1F94;
+			productRefGroup = EB9FB8031896401E002A1F94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB9FB8011896401E002A1F94 /* DiffbotAPIClient */,
+				EB9FB81C1896401E002A1F94 /* DiffbotAPIClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB9FB8001896401E002A1F94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9FB8101896401E002A1F94 /* InfoPlist.strings in Resources */,
+				EB9FB8181896401E002A1F94 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9FB81B1896401E002A1F94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9FB8291896401E002A1F94 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB9FB7FE1896401E002A1F94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9FB85A18964045002A1F94 /* Reachability.m in Sources */,
+				EB9FB85418964045002A1F94 /* ASIFormDataRequest.m in Sources */,
+				EB9FB85518964045002A1F94 /* ASIHTTPRequest.m in Sources */,
+				EB9FB8121896401E002A1F94 /* main.m in Sources */,
+				EB9FB85018964045002A1F94 /* ASIAuthenticationDialog.m in Sources */,
+				EB9FB85718964045002A1F94 /* ASINetworkQueue.m in Sources */,
+				EB9FB85318964045002A1F94 /* ASIDownloadCache.m in Sources */,
+				EB9FB85618964045002A1F94 /* ASIInputStream.m in Sources */,
+				EB9FB85818964045002A1F94 /* DiffbotAPIClient.m in Sources */,
+				EB9FB85118964045002A1F94 /* ASIDataCompressor.m in Sources */,
+				EB9FB85918964045002A1F94 /* NSDictionary+Merge.m in Sources */,
+				EB9FB8161896401E002A1F94 /* DiffbotAppDelegate.m in Sources */,
+				EB9FB85218964045002A1F94 /* ASIDataDecompressor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9FB8191896401E002A1F94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9FB82B1896401E002A1F94 /* DiffbotAPIClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB9FB8231896401E002A1F94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB9FB8011896401E002A1F94 /* DiffbotAPIClient */;
+			targetProxy = EB9FB8221896401E002A1F94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB9FB80E1896401E002A1F94 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB9FB80F1896401E002A1F94 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EB9FB8271896401E002A1F94 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB9FB8281896401E002A1F94 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB9FB82C1896401E002A1F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB9FB82D1896401E002A1F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB9FB82F1896401E002A1F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiffbotAPIClient/DiffbotAPIClient-Prefix.pch";
+				INFOPLIST_FILE = "DiffbotAPIClient/DiffbotAPIClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EB9FB8301896401E002A1F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiffbotAPIClient/DiffbotAPIClient-Prefix.pch";
+				INFOPLIST_FILE = "DiffbotAPIClient/DiffbotAPIClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EB9FB8321896401E002A1F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DiffbotAPIClient.app/DiffbotAPIClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiffbotAPIClient/DiffbotAPIClient-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DiffbotAPIClientTests/DiffbotAPIClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EB9FB8331896401E002A1F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DiffbotAPIClient.app/DiffbotAPIClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiffbotAPIClient/DiffbotAPIClient-Prefix.pch";
+				INFOPLIST_FILE = "DiffbotAPIClientTests/DiffbotAPIClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB9FB7FD1896401E002A1F94 /* Build configuration list for PBXProject "DiffbotAPIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9FB82C1896401E002A1F94 /* Debug */,
+				EB9FB82D1896401E002A1F94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB9FB82E1896401E002A1F94 /* Build configuration list for PBXNativeTarget "DiffbotAPIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9FB82F1896401E002A1F94 /* Debug */,
+				EB9FB8301896401E002A1F94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB9FB8311896401E002A1F94 /* Build configuration list for PBXNativeTarget "DiffbotAPIClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9FB8321896401E002A1F94 /* Debug */,
+				EB9FB8331896401E002A1F94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB9FB7FA1896401E002A1F94 /* Project object */;
+}
