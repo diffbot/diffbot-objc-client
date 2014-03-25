@@ -33,52 +33,50 @@ To add optional arguments to any api call, pass in an NSDictionary with the opti
 ## Example: Analyze API Call
 
 ```objective-c
-    NSString *articleURL = @"http://www.macrumors.com/2014/01/12/your-verse-ipad-ad";
-    NSDictionary *optionalArgs = @{
-                                   @"author": @"fields"
-                                   };
-    
-    [DiffbotAPIClient apiRequest:DiffbotPageClassifierRequest UrlString:articleURL OptionalArgs:optionalArgs Format:DiffbotAPIFormatJSON withCallback:^(BOOL success, id result) {
-        if(success) {
-            NSLog(@"Call success: %@", result);
-        } else {
-            NSLog(@"Error: %@", result);
-        }
-    }];
+NSString *articleURL = @"http://www.macrumors.com/2014/01/12/your-verse-ipad-ad";
+NSDictionary *optionalArgs = @{
+                              @"author": @"fields"
+                              };
 
-
+[DiffbotAPIClient apiRequest:DiffbotPageClassifierRequest UrlString:articleURL OptionalArgs:optionalArgs Format:DiffbotAPIFormatJSON withCallback:^(BOOL success, id result) {
+   if(success) {
+       NSLog(@"Call success: %@", result);
+   } else {
+       NSLog(@"Error: %@", result);
+   }
+}];
 ```
 
 ## Example: Article API Call
 
 ```objective-c
-    NSString *articleURL = @"http://www.macrumors.com/2014/01/12/your-verse-ipad-ad";
-    NSDictionary *optionalArgs = @{
-                               @"fields": @"author"
-                               };
+NSString *articleURL = @"http://www.macrumors.com/2014/01/12/your-verse-ipad-ad";
+NSDictionary *optionalArgs = @{
+                          @"fields": @"author"
+                          };
 
-    [DiffbotAPIClient apiRequest:DiffbotArticleRequest UrlString:articleURL OptionalArgs:optionalArgs Format:DiffbotAPIFormatJSON withCallback:^(BOOL success, id result) {
-        if(success) {
-            NSLog(@"Call success: %@", result);
-        } else {
-            NSLog(@"Error: %@", result);
-        }
-    }];
+[DiffbotAPIClient apiRequest:DiffbotArticleRequest UrlString:articleURL OptionalArgs:optionalArgs Format:DiffbotAPIFormatJSON withCallback:^(BOOL success, id result) {
+   if(success) {
+       NSLog(@"Call success: %@", result);
+   } else {
+       NSLog(@"Error: %@", result);
+   }
+}];
 ```
 
 ## Example: Batch request
 
 ```objective-c
-    NSString *firstArticleURL = @"http://www.macrumors.com/2014/01/12/your-verse-ipad-ad";
-    NSString *secondArticleURL = @"http://www.huffingtonpost.com/2014/01/24/stephen-hawking-black-holes-event-horizons_n_4658220.html";
-    
-    NSDictionary *dictOne = [DiffbotAPIClient dictForBatchRequest:DiffbotArticleRequest UrlString:firstArticleURL Method:@"GET" OptionalArgs:nil Format:DiffbotAPIFormatJSON];
+NSString *firstArticleURL = @"http://www.macrumors.com/2014/01/12/your-verse-ipad-ad";
+NSString *secondArticleURL = @"http://www.huffingtonpost.com/2014/01/24/stephen-hawking-black-holes-event-horizons_n_4658220.html";
 
-    NSDictionary *dictTwo = [DiffbotAPIClient dictForBatchRequest:DiffbotArticleRequest UrlString:secondArticleURL Method:@"GET" OptionalArgs:nil Format:DiffbotAPIFormatJSON];
-    
-    [DiffbotAPIClient batchRequests:@[dictOne, dictTwo] withCallback:^(BOOL success, id result) {
-        NSLog(@"%@", result);
-    }];
+NSDictionary *dictOne = [DiffbotAPIClient dictForBatchRequest:DiffbotArticleRequest UrlString:firstArticleURL Method:@"GET" OptionalArgs:nil Format:DiffbotAPIFormatJSON];
+
+NSDictionary *dictTwo = [DiffbotAPIClient dictForBatchRequest:DiffbotArticleRequest UrlString:secondArticleURL Method:@"GET" OptionalArgs:nil Format:DiffbotAPIFormatJSON];
+
+[DiffbotAPIClient batchRequests:@[dictOne, dictTwo] withCallback:^(BOOL success, id result) {
+   NSLog(@"%@", result);
+}];
 ```
 
 -Initial commit by Dan Ha-
